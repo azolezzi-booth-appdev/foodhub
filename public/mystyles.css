@@ -1,7 +1,18 @@
 body{
   font-family: 'Montserrat', sans-serif;
+  padding-top: 64px;
 }
 
 .navbar-brand{
  font-family: 'Passion One', cursive;
+}
+
+.who-delivers{
+  background: url("assets/images/main-hero.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.py{
+  padding-bottom: 150px;
+  padding-top: 150px;
 }

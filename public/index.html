@@ -26,20 +26,21 @@
   <link href="/mystyles.css" rel="stylesheet">
 </head>
 
+<body>
   <!--  Nav Bar-->
-<nav class="navbar navbar-expand-lg navbar-light bg-danger">
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-danger">
   <a class="navbar-brand  text-light" href="https://www.google.com"><span class="h2 font-weight-bold">FOODHUB</span></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse text-white" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto my-2 my-lg-0">
     </ul>
 
-      <a class="nav-link text-light" href="https://www.google.com">Sign In</a>
-      <li class="nav-link ">
-        <a class="nav-item" href="https://www.google.com">
+      <a class="nav-link text-white" href="https://www.google.com">Sign In</a>
+      <li class="nav-link">
+        <a class="nav-item text-white" href="https://www.google.com">
             <i class="fa fa-shopping-bag fa-lg"></i>
         </a>
       </li>
@@ -47,29 +48,41 @@
 </nav>
 
 
-<body>
- 
-  <h2>
+<div class="container-fluid who-delivers py">
+  <div class="row">
+    <div class="col-md-6 offset-md-3 text-white">
+      
+  <h2 class="font-weight-bold">
     Who delivers in your neighborhood?
   </h2>
 
-  <form>
-    <div>
-      <label for="address">
-        Enter your address below.
-      </label>
+        <form>
+          <div class="form-group">
+            <label for="address">
+              Enter your address below.
+            </label>
 
-      <div>
-        <i class="fa fa-map-marker"></i>
+            <div class="input-group">
+              <div class="input-group-prepend">
+              <span class="input-group-text">
+                <i class="fa fa-map-marker"></i>
+              </span>
+              </div>
+                <input class="form-control" id="address" type="text" placeholder="Street address, city, state">
+          
+            </div>
+          </div>
 
-        <input id="address" type="text" placeholder="Street address, city, state">
-      </div>
+          <button class="btn btn-primary btn-block">
+            Find Food
+          </button>
+        </form>
+
     </div>
-
-    <button>
-      Find Food
-    </button>
-  </form>
+  </div>
+</div>
+ 
+ 
 
   <h2>
     How to Foodhub
